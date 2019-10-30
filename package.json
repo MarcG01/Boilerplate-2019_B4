@@ -1,0 +1,54 @@
+{
+  "name": "app-06_boilerplate-2019",
+  "version": "1.0.0",
+  "description": "- Babel\r - Sass\r - Webpack\r - PostCSS\r - JQuery\r - Bootstrap 4\r - Animate.css",
+  "main": "./src/index.html",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack-dev-server --open --inline",
+    "build": "rm -rf build && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "lint": "eslint src/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AXM-DVR/Boilerplate-2019_B4.git"
+  },
+  "keywords": [],
+  "author": "AXM-DVR",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AXM-DVR/Boilerplate-2019_B4/issues"
+  },
+  "homepage": "https://github.com/AXM-DVR/Boilerplate-2019_B4#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.7.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "file-loader": "^4.2.0",
+    "html-replace-webpack-plugin": "^2.5.6",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "2.4.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
+  "optionalDependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}

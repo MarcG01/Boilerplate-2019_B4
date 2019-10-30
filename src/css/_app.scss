@@ -1,0 +1,85 @@
+/** --------------------------------------------------------------
+*   RÈGLES PRINCIPALES
+*** -------------------------------------------------------------- */
+body {
+  background: $themeColor-Dark;
+//  user-select: none;
+}
+
+main {
+  margin-top: 80px;
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    padding-top: 30px;
+  }
+}
+
+/* HEADER */
+header {
+  background: $themeColor-GrisBase;
+  padding: 10px;
+}
+
+
+/** --------------------------------------------------------------
+*   MIXIN SECTION
+*** -------------------------------------------------------------- */
+@mixin boite($size, $color) {
+  background: $themeColor-OrangeBase;
+  border: 5px solid $color;
+  height: $size;
+  width: $size;
+}
+
+.promo1 {
+  @include boite(50px, rgb(235, 176, 66));
+}
+
+.promo2 {
+  @include boite(75px, #ccc);
+}
+
+.promo3 {
+  @include boite(100px, $themeColor-Light);
+}
+
+
+/** --------------------------------------------------------------
+*   SECTION
+*** -------------------------------------------------------------- */
+section.example {
+  background-color: lighten($themeColor-BleuBase, 10%);
+
+  .cards {
+      margin: 20px;
+  }
+
+  article {
+    font-size: 6em;
+    padding: 20px;
+  }
+}
+
+.uneimage {
+  background-image: url("../images/photo-leopard.jpg");
+  height: 120px;
+  width: 350px;
+}
+
+/** --------------------------------------------------------------
+*   FOOTER
+*** -------------------------------------------------------------- */
+footer {
+//  display: block;
+//  width: 100%;
+  background-color: darken($themeColor-GrisBase, 20%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+  h4 {
+    padding: 20px;
+  }
+}
